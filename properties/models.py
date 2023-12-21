@@ -12,9 +12,9 @@ class PropertiesDetails(models.Model):
     carParking = models.IntegerField()
     unitSize = models.IntegerField()
     propertyPhoto1 = models.ImageField(upload_to="images/")
-    propertyPhoto2 = models.ImageField(upload_to="images/")
-    propertyPhoto3 = models.ImageField(upload_to="images/")
-    propertyPhoto4 = models.ImageField(upload_to="images/")
+    propertyPhoto2 = models.ImageField(upload_to="images/", default="")
+    propertyPhoto3 = models.ImageField(upload_to="images/", default="")
+    propertyPhoto4 = models.ImageField(upload_to="images/", default="")
 
     def __str__(self):
         return self.propertyName
