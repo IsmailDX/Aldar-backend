@@ -11,7 +11,10 @@ class PropertiesDetails(models.Model):
     bedrooms = models.IntegerField()
     carParking = models.IntegerField()
     unitSize = models.IntegerField()
-    propertyPhoto = models.ImageField(upload_to="images/")
+    propertyPhoto1 = models.ImageField(upload_to="images/")
+    propertyPhoto2 = models.ImageField(upload_to="images/")
+    propertyPhoto3 = models.ImageField(upload_to="images/")
+    propertyPhoto4 = models.ImageField(upload_to="images/")
 
     def __str__(self):
         return self.propertyName
