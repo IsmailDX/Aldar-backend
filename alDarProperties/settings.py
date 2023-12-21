@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,14 +84,14 @@ WSGI_APPLICATION = "alDarProperties.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "aldar_db",
-        "USER": "root",
-        "PASSWORD": "password",
-        "HOST": "localhost",
-        "PORT": "3306",
-    }
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    },
 }
+
+DATABASES["default"] = dj_database_url.parse(
+    "postgres://propertiesdb_e4nk_user:8q65dYO34vwhxWD4aDytQ1UI8HnmG9Ev@dpg-cm23fq6n7f5s73ere5s0-a.oregon-postgres.render.com/propertiesdb_e4nk"
+)
 
 
 # Password validation
