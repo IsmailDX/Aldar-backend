@@ -89,9 +89,14 @@ DATABASES = {
 }
 
 DATABASES["default"] = dj_database_url.parse(
-    "postgres://propertiesdb_e4nk_user:8q65dYO34vwhxWD4aDytQ1UI8HnmG9Ev@dpg-cm23fq6n7f5s73ere5s0-a.oregon-postgres.render.com/propertiesdb_e4nk"
+    "postgres://propertiesdb2_user:1xNBjKaq9aQ7sabImqBxV5Mn2OQgAJgM@dpg-cnulbgmn7f5s73fb4000-a.oregon-postgres.render.com/propertiesdb2"
 )
 
+# admin, and Adel2011@
+
+# Alghadeer (1 Bedroom Apartments, 4 Bedroom Townhouse for sale, Plot for sale)
+# The Bridges (1 Bedroom Apartments bridges, )
+# Reflection, Al Reem (1 Bedroom Apartments Reem, 3 Bedrooms Townhouse, plot reem, Plot for sale)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
